@@ -16,7 +16,7 @@ export default function NotFound() {
       <section className="flex flex-col items-center justify-center gap-y-4 text-center">
         <div className="max-w-md">
           <h1 className="mb-4 text-3xl font-medium">404: Page not found</h1>
-          <p className="prose">Oops! The page you're looking for doesn't exist.</p>
+          <p className="prose">Oops! The page you&apos;re looking for doesn&apos;t exist.</p>
         </div>
         <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), 'flex gap-x-1.5 group')}>
           <span className="transition-transform group-hover:-translate-x-1">&larr;</span> Go to home page

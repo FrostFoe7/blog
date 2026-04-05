@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "skills": {
+    "next-best-practices": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "772e9716c7397c90431310d7c6e9316a38c21d35a8dc4d83e9a01647e75c31ab"
+    },
+    "next-cache-components": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "3b71f079cc062163d8f935700af4bee997753491411c2931a9dfa6c7feba2dab"
+    },
+    "next-upgrade": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "c47da249d9da0272af762c543e62c82e672304bbd74b814089befa8e2eda4dc5"
+    },
+    "react:components": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "8d5ec31d7e16cc46b16a94a0868dcb08c3a9f4f2ffe531159c9a677872151955"
+    },
+    "supabase-postgres-best-practices": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "1c2285738356577ae2859149c3befe21c705989e51599fa3416a850990c605b1"
+    },
+    "tailwind-design-system": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "988d80e52c67c3692d43cc963b6a048a239895e88b272b061de55370d0f8efc3"
+    },
+    "tailwind-theme-builder": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "9a3e87bdd535870882acceac43200e7504688980a9f8c5ba98f11368a7813468"
+    },
+    "tailwindcss-mobile-first": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "6143917c1655f916af9f670d2ceaaa4f57144e260b855c3ca4bd46a28697979f"
+    },
+    "typescript-advanced-types": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "3a3be8c925f96ac4e1280db28a01677e7ca5197f3792de2bbf35ab3bb324b6dd"
+    },
+    "ui-ux-pro-max": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "f8d580da1d7a06431f3397084afc4e6bff565fd61400d3b810852c04ff015926"
+    },
+    "vercel-composition-patterns": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "fa8db5a83974ba032e1ede7e6bf43713e7ed0006f6dc12223c22a576edb8e893"
+    },
+    "vercel-react-best-practices": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "c49da25fb14d1c3318e6c6faf01d928672e7e15decb13b3fd43e61bdf7d72950"
+    },
+    "vercel-react-view-transitions": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "a4f7fae0faac19fddf131eb8c0686254d9bfc7e2cfd88e2b7cb033cb57725e8e"
+    },
+    "web-design-guidelines": {
+      "source": "frostfoe7/rdz",
+      "sourceType": "github",
+      "computedHash": "2b4252a346243aa696da2d021a7a2f747259567cd3ca51308ee86ca24ab60d86"
+    }
+  }
+}

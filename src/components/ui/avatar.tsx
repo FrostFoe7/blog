@@ -29,8 +29,10 @@ function AvatarImage({
   ...props
 }: React.ComponentProps<"img">) {
   return (
+    // eslint-disable-next-line @next/next/no-img-element
     <img
       data-slot="avatar-image"
+      alt=""
       className={cn("aspect-square size-full rounded-full object-cover", className)}
       {...props}
     />
