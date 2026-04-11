@@ -144,6 +144,11 @@ export async function getAllAuthors(): Promise<Author[]> {
   return entries
 }
 
+export async function getAuthorById(id: string): Promise<Author | null> {
+  const all = await getAllAuthors()
+  return all.find((a) => a.id === id) || null
+}
+
 export async function getAllProjects(): Promise<Project[]> {
   const files = await readCollectionFiles('projects')
   const entries = await Promise.all(
@@ -169,6 +174,11 @@ export async function getAllProjects(): Promise<Project[]> {
     const dateB = b.data.startDate ? new Date(b.data.startDate).getTime() : 0
     return dateB - dateA
   })
+}
+
+export async function getProjectById(id: string): Promise<Project | null> {
+  const all = await getAllProjects()
+  return all.find((p) => p.id === id) || null
 }
 
 export async function getAllPostsAndSubposts(): Promise<BlogPost[]> {

@@ -3,8 +3,7 @@ import type { Metadata } from 'next'
 import '@/app/globals.css'
 import '@/app/typography.css'
 
-import { Footer } from '@/components/footer'
-import { Header } from '@/components/header'
+import { Toaster } from '@/components/ui/sonner'
 import { SITE } from '@/consts'
 
 export const metadata: Metadata = {
@@ -42,13 +41,10 @@ const initThemeScript = `(() => {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html className="bg-background text-foreground scheme-light-dark" lang={SITE.locale}>
-      <body className="flex h-fit min-h-screen flex-col gap-y-6 font-sans">
+      <body className="min-h-screen font-sans">
         <script dangerouslySetInnerHTML={{ __html: initThemeScript }} />
-        <header className="bg-background/50 sticky top-0 z-50 divide-y backdrop-blur-sm xl:divide-none">
-          <Header />
-        </header>
-        <main className="w-full mx-auto flex grow flex-col gap-y-6 px-4">{children}</main>
-        <Footer />
+        {children}
+        <Toaster />
       </body>
     </html>
   )
