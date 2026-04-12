@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
-import { ChevronRight, MoreHorizontal } from "lucide-react"
+import { CaretRight, DotsThree } from "@phosphor-icons/react/dist/ssr"
 
 function Breadcrumb({ className, ...props }: React.ComponentProps<"nav">) {
   return (
@@ -78,7 +78,7 @@ function BreadcrumbSeparator({
       {...props}
     >
       {children ?? (
-        <ChevronRight />
+        <CaretRight />
       )}
     </li>
   )
@@ -99,7 +99,7 @@ function BreadcrumbEllipsis({
       )}
       {...props}
     >
-      <MoreHorizontal />
+      <DotsThree />
       <span className="sr-only">More</span>
     </span>
   )

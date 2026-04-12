@@ -1,6 +1,8 @@
+'use client'
+
 import * as React from 'react'
 import { cn } from '@/lib/utils'
-import { getLucideIcon } from '@/lib/icon'
+import { getIcon } from '@/lib/icon'
 
 type Props = {
   name: string
@@ -9,7 +11,7 @@ type Props = {
 }
 
 export function MdxIcon({ name, className, ...props }: Props) {
-  const Icon = React.useMemo(() => getLucideIcon(name), [name])
+  const Icon = React.useMemo(() => getIcon(name), [name])
   return React.createElement(Icon, {
     className: cn('size-4', className),
     ...props,

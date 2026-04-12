@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { FileText, Hash } from 'lucide-react'
+import { FileText, Hash } from '@phosphor-icons/react/dist/ssr'
 
 import { Link } from '@/components/link'
 import { Badge } from '@/components/ui/badge'

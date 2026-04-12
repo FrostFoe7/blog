@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { FileText, Hash } from 'lucide-react'
+import { FileText, Hash } from '@phosphor-icons/react/dist/ssr'
 import { notFound } from 'next/navigation'
 
 import { Breadcrumbs } from '@/components/breadcrumbs'
@@ -113,14 +113,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
         <div className="col-start-2">
           <Breadcrumbs
             items={[
-              { href: '/blog', label: 'Blog', icon: 'lucide:library-big' },
+              { href: '/blog', label: 'Blog', icon: 'phosphor:Books' },
               ...(isCurrentSubpost && parentPost
                 ? [
-                    { href: `/blog/${parentPost.id}`, label: parentPost.data.title, icon: 'lucide:book-open' },
-                    { href: `/blog/${currentPostId}`, label: post.data.title, icon: 'lucide:file-text' },
+                    { href: `/blog/${parentPost.id}`, label: parentPost.data.title, icon: 'phosphor:BookOpen' },
+                    { href: `/blog/${currentPostId}`, label: post.data.title, icon: 'phosphor:FileText' },
                   ]
                 : [
-                    { href: `/blog/${currentPostId}`, label: post.data.title, icon: 'lucide:book-open-text' },
+                    { href: `/blog/${currentPostId}`, label: post.data.title, icon: 'phosphor:BookOpenText' },
                   ]),
             ]}
           />

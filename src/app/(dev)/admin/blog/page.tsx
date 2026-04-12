@@ -1,7 +1,7 @@
 import { getAllPostsAndSubposts } from '@/lib/content'
 import { DeleteButton } from '@/components/admin/delete-button'
 import { format } from 'date-fns'
-import { Plus, Search, Filter } from 'lucide-react'
+import { Plus, MagnifyingGlass, Funnel } from '@phosphor-icons/react/dist/ssr'
 
 export default async function AdminBlogList() {
   const posts = await getAllPostsAndSubposts()
@@ -24,7 +24,7 @@ export default async function AdminBlogList() {
       <div className="bg-card border rounded-xl shadow-sm overflow-hidden">
         <div className="p-4 border-b bg-muted/30 flex flex-col md:flex-row gap-4 items-center justify-between">
           <div className="relative w-full md:w-96">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={16} />
+            <MagnifyingGlass className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={16} />
             <input 
               placeholder="Search posts..." 
               className="w-full pl-10 pr-4 py-2 bg-background border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
@@ -32,7 +32,7 @@ export default async function AdminBlogList() {
           </div>
           <div className="flex items-center gap-2">
             <button className="flex items-center gap-2 px-3 py-2 text-xs font-medium border rounded-lg hover:bg-muted transition-colors">
-              <Filter size={14} /> Filter
+              <Funnel size={14} /> Filter
             </button>
           </div>
         </div>

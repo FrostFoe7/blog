@@ -3,7 +3,7 @@ import {
   getAllProjects, 
   getAllPostsAndSubposts 
 } from '@/lib/content'
-import { FileText, Users, Briefcase, Plus, ArrowRight } from 'lucide-react'
+import { FileText, Users, Briefcase, Plus, ArrowRight } from '@phosphor-icons/react/dist/ssr'
 
 export default async function AdminDashboard() {
   const [authors, projects, posts] = await Promise.all([
@@ -112,3 +112,4 @@ export default async function AdminDashboard() {
     </div>
   )
 }
+

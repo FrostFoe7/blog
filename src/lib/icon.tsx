@@ -1,5 +1,5 @@
-import * as LucideIcons from 'lucide-react'
-import type { LucideProps } from 'lucide-react'
+import * as PhosphorIcons from '@phosphor-icons/react/dist/ssr'
+import type { IconProps } from '@phosphor-icons/react'
 import type { ComponentType } from 'react'
 
 function toPascalCase(input: string): string {
@@ -9,15 +9,15 @@ function toPascalCase(input: string): string {
     .join('')
 }
 
-export function getLucideIcon(name: string) {
-  const clean = name.replace(/^lucide:/, '')
+export function getIcon(name: string) {
+  const clean = name.replace(/^(lucide|phosphor):/, '')
   const pascal = toPascalCase(clean)
-  const registry = LucideIcons as unknown as Record<string, ComponentType<LucideProps>>
+  const registry = PhosphorIcons as unknown as Record<string, ComponentType<IconProps>>
 
   const icon =
     registry[pascal] ||
     registry[`${pascal}Icon`] ||
-    LucideIcons.CircleHelp
+    PhosphorIcons.Question
 
   return icon
 }

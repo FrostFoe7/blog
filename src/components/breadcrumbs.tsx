@@ -1,6 +1,6 @@
-import { Home } from 'lucide-react'
+import { House } from '@phosphor-icons/react/dist/ssr'
 
-import { getLucideIcon } from '@/lib/icon'
+import { getIcon } from '@/lib/icon'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -22,12 +22,12 @@ export function Breadcrumbs({ items }: { items: BreadcrumbNode[] }) {
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink href="/">
-            <Home className="size-4 shrink-0" />
+            <House className="size-4 shrink-0" />
           </BreadcrumbLink>
         </BreadcrumbItem>
         {items.map((item, index) => {
           const isLast = index === items.length - 1
-          const Icon = item.icon ? getLucideIcon(item.icon) : null
+          const Icon = item.icon ? getIcon(item.icon) : null
           return (
             <div key={`${item.label}-${index}`} className="contents">
               <BreadcrumbSeparator />

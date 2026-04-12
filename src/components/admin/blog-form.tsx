@@ -10,7 +10,7 @@ import { marked } from 'marked'
 import { BlogFrontmatterSchema, type BlogInput } from '@/lib/schemas'
 import { saveBlog, uploadImage } from '@/lib/admin-actions'
 import { ImageInput } from './image-input'
-import { Eye, Edit3, Image as ImageIcon, Save, X, Layout } from 'lucide-react'
+import { Eye, PencilSimple, Image as ImageIcon, FloppyDisk, X, Layout } from '@phosphor-icons/react'
 
 export function BlogForm({ initialData }: { initialData?: BlogInput }) {
   const router = useRouter()
@@ -97,7 +97,7 @@ export function BlogForm({ initialData }: { initialData?: BlogInput }) {
             onClick={() => setActiveTab('edit')}
             className={`flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md transition-all ${activeTab === 'edit' ? 'bg-background shadow-sm' : 'hover:text-foreground/80'}`}
           >
-            <Edit3 size={16} /> Write
+            <PencilSimple size={16} /> Write
           </button>
           <button
             onClick={() => setActiveTab('preview')}
@@ -120,7 +120,7 @@ export function BlogForm({ initialData }: { initialData?: BlogInput }) {
             disabled={isSubmitting}
             className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 disabled:opacity-50 transition-colors"
           >
-            <Save size={16} /> {isSubmitting ? 'Saving...' : 'Save Changes'}
+            <FloppyDisk size={16} /> {isSubmitting ? 'Saving...' : 'Save Changes'}
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { getAllProjects } from '@/lib/content'
 import { DeleteButton } from '@/components/admin/delete-button'
-import { Plus, ExternalLink, Calendar, Tag } from 'lucide-react'
+import { Plus, ArrowSquareOut, Calendar, Tag } from '@phosphor-icons/react/dist/ssr'
 
 export default async function AdminProjectsList() {
   const projects = await getAllProjects()
@@ -37,7 +37,7 @@ export default async function AdminProjectsList() {
                 <h3 className="font-bold text-xl group-hover:text-primary transition-colors">{project.data.name}</h3>
                 <div className="flex gap-2">
                   <a href={project.data.link} target="_blank" className="p-1.5 rounded-md hover:bg-muted text-muted-foreground transition-colors">
-                    <ExternalLink size={16} />
+                    <ArrowSquareOut size={16} />
                   </a>
                   <DeleteButton collection="projects" id={project.id} />
                 </div>

@@ -1,6 +1,6 @@
 import { getAllAuthors } from '@/lib/content'
 import { DeleteButton } from '@/components/admin/delete-button'
-import { Plus, Search, Mail, Globe } from 'lucide-react'
+import { Plus, MagnifyingGlass, Envelope, Globe } from '@phosphor-icons/react/dist/ssr'
 
 export default async function AdminAuthorsList() {
   const authors = await getAllAuthors()
@@ -34,7 +34,7 @@ export default async function AdminAuthorsList() {
                   href={`/admin/authors/${author.id}`} 
                   className="p-2 rounded-lg hover:bg-muted text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Search size={18} />
+                  <MagnifyingGlass size={18} />
                 </a>
                 <DeleteButton collection="authors" id={author.id} />
               </div>
@@ -53,7 +53,7 @@ export default async function AdminAuthorsList() {
             <div className="flex items-center gap-4 pt-4 border-t text-muted-foreground">
               {author.data.mail && (
                 <span className="hover:text-foreground cursor-help" title={author.data.mail}>
-                  <Mail size={16} />
+                  <Envelope size={16} />
                 </span>
               )}
               {author.data.website && (

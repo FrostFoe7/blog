@@ -1,6 +1,6 @@
 'use client'
 
-import { BookOpen, BookOpenText, ChevronDown, File, FileText } from 'lucide-react'
+import { BookOpen, BookOpenText, CaretDown, File, FileText } from '@phosphor-icons/react'
 
 import { cn } from '@/lib/utils'
 import type { BlogPost } from '@/types'
@@ -45,7 +45,7 @@ export function SubpostsHeader({
               </span>
             </div>
             <span className="text-muted-foreground ml-2">
-              <ChevronDown className="h-4 w-4 transition-transform duration-200 group-open:rotate-180" />
+              <CaretDown className="h-4 w-4 transition-transform duration-200 group-open:rotate-180" />
             </span>
           </div>
         </summary>

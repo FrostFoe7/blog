@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Hash } from 'lucide-react'
+import { Hash } from '@phosphor-icons/react/dist/ssr'
 
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { Link } from '@/components/link'
@@ -13,7 +13,7 @@ export default async function TagsIndexPage() {
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-y-6">
-      <Breadcrumbs items={[{ label: 'Tags', icon: 'lucide:tags' }]} />
+      <Breadcrumbs items={[{ label: 'Tags', icon: 'phosphor:Tags' }]} />
       <div className="flex flex-col gap-4">
         <div className="flex flex-wrap gap-2">
           {sortedTags.map(({ tag, count }) => (

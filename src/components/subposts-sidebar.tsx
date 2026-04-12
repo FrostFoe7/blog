@@ -1,4 +1,4 @@
-import { BookOpen, BookOpenText, File, FileText } from 'lucide-react'
+import { BookOpen, BookOpenText, File, FileText } from '@phosphor-icons/react/dist/ssr'
 
 import { Link } from '@/components/link'
 import { cn } from '@/lib/utils'

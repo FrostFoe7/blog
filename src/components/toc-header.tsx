@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import { ChevronDown } from 'lucide-react'
+import { CaretDown } from '@phosphor-icons/react'
 
 import { cn, getHeadingMargin } from '@/lib/utils'
 import type { TOCHeading } from '@/types'
@@ -70,7 +70,7 @@ export function TOCHeader({ headings }: { headings: TOCHeading[] }) {
             </div>
             <span className="text-muted-foreground flex-grow truncate text-sm">{current?.text || 'Overview'}</span>
             <span className="text-muted-foreground ml-2">
-              <ChevronDown className="h-4 w-4 transition-transform duration-200 group-open:rotate-180" />
+              <CaretDown className="h-4 w-4 transition-transform duration-200 group-open:rotate-180" />
             </span>
           </div>
         </summary>

@@ -9,7 +9,7 @@ import { z } from 'zod'
 import { ProjectFrontmatterSchema, type ProjectInput } from '@/lib/schemas'
 import { saveProject } from '@/lib/admin-actions'
 import { ImageInput } from './image-input'
-import { Save, X, Briefcase } from 'lucide-react'
+import { FloppyDisk, X, Briefcase } from '@phosphor-icons/react'
 
 export function ProjectForm({ initialData }: { initialData?: ProjectInput }) {
   const router = useRouter()
@@ -79,7 +79,7 @@ export function ProjectForm({ initialData }: { initialData?: ProjectInput }) {
             disabled={isSubmitting}
             className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 disabled:opacity-50 transition-colors"
           >
-            <Save size={16} /> {isSubmitting ? 'Saving...' : 'Save Project'}
+            <FloppyDisk size={16} /> {isSubmitting ? 'Saving...' : 'Save Project'}
           </button>
         </div>
       </div>

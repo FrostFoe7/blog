@@ -9,7 +9,7 @@ import { z } from 'zod'
 import { AuthorFrontmatterSchema, type AuthorInput } from '@/lib/schemas'
 import { saveAuthor } from '@/lib/admin-actions'
 import { ImageInput } from './image-input'
-import { Save, X, User } from 'lucide-react'
+import { FloppyDisk, X, User } from '@phosphor-icons/react'
 
 export function AuthorForm({ initialData }: { initialData?: AuthorInput }) {
   const router = useRouter()
@@ -80,7 +80,7 @@ export function AuthorForm({ initialData }: { initialData?: AuthorInput }) {
             disabled={isSubmitting}
             className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 disabled:opacity-50 transition-colors"
           >
-            <Save size={16} /> {isSubmitting ? 'Saving...' : 'Save Author'}
+            <FloppyDisk size={16} /> {isSubmitting ? 'Saving...' : 'Save Author'}
           </button>
         </div>
       </div>

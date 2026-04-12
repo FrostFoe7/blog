@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Calendar } from 'lucide-react'
+import { Calendar } from '@phosphor-icons/react/dist/ssr'
 
 import { Link } from '@/components/link'
 import { Badge } from '@/components/ui/badge'

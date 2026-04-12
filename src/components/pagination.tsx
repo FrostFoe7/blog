@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react'
+import { CaretLeft, CaretRight, DotsThree } from '@phosphor-icons/react/dist/ssr'
 
 import { Link } from '@/components/link'
 import { cn } from '@/lib/utils'
@@ -28,7 +28,7 @@ export function PaginationComponent({
             href={currentPage > 1 ? getPageUrl(currentPage - 1) : '#'}
             className={cn(buttonVariants({ variant: 'ghost', size: 'default' }), 'gap-1 px-2.5 sm:pl-2.5', currentPage === 1 && 'pointer-events-none opacity-50')}
           >
-            <ChevronLeft />
+            <CaretLeft />
             <span className="hidden sm:block">Previous</span>
           </Link>
         </li>
@@ -45,7 +45,7 @@ export function PaginationComponent({
         {totalPages > 5 ? (
           <li>
             <span className="flex size-9 items-center justify-center">
-              <MoreHorizontal className="size-4" />
+              <DotsThree className="size-4" />
             </span>
           </li>
         ) : null}
@@ -55,7 +55,7 @@ export function PaginationComponent({
             className={cn(buttonVariants({ variant: 'ghost', size: 'default' }), 'gap-1 px-2.5 sm:pr-2.5', currentPage === totalPages && 'pointer-events-none opacity-50')}
           >
             <span className="hidden sm:block">Next</span>
-            <ChevronRight />
+            <CaretRight />
           </Link>
         </li>
       </ul>

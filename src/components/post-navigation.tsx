@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, CornerLeftUp } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ArrowBendLeftUp } from '@phosphor-icons/react/dist/ssr'
 
 import { Link } from '@/components/link'
 import { buttonVariants } from '@/components/ui/button'
@@ -45,7 +45,7 @@ export function PostNavigation({
             !parentPost && 'pointer-events-none cursor-not-allowed opacity-50',
           )}
         >
-          <CornerLeftUp className="mr-2 size-4 transition-transform group-hover:-translate-y-1" />
+          <ArrowBendLeftUp className="mr-2 size-4 transition-transform group-hover:-translate-y-1" />
           <div className="flex flex-col items-center overflow-hidden text-wrap">
             <span className="text-muted-foreground text-center text-xs">Parent Post</span>
             <span className="w-full text-center text-sm text-balance text-ellipsis">
